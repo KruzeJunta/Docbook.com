@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocBook Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="user.png" alt="User" class="user-avatar">
+                <h3>Administrator</h3>
+                <p>admin@docbook.com</p>
+            </div>
+            <nav class="nav-links">
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#appointment">Appointment</a>
+                <a href="#patients">Patients</a>
+            </nav>
+            <button class="logout-button">Log out</button>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <input type="text" placeholder="Search Doctor name or Email" class="search-bar">
+                <button class="search-button">Search</button>
+            </header>
+            <section class="status-section">
+                <div class="status-card">
+                    <h2>3</h2>
+                    <p>Doctors</p>
+                </div>
+                <div class="status-card">
+                    <h2>3</h2>
+                    <p>Patients</p>
+                </div>
+                <div class="status-card">
+                    <h2>0</h2>
+                    <p>New Booking</p>
+                </div>
+                <div class="status-card">
+                    <h2>0</h2>
+                    <p>Today Sessions</p>
+                </div>
+            </section>
+            <section class="appointments-section">
+                <div class="appointment-box">
+                    <h3>Upcoming Appointments until Next Tuesday</h3>
+                    <p>Here's quick access to upcoming appointments within the next 7 days.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Appointment Number</th>
+                                <th>Patient Name</th>
+                                <th>Doctor</th>
+                                <th>Session</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>John Doe</td>
+                                <td>Dr. Smith</td>
+                                <td>General Checkup</td>
+                            </tr>
+                            <!-- Additional rows can be added here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="session-box">
+                    <h3>Upcoming Sessions until Next Tuesday</h3>
+                    <p>Here's quick access to upcoming sessions scheduled within the next 7 days.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Session Title</th>
+                                <th>Doctor</th>
+                                <th>Scheduled Date & Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Consultation</td>
+                                <td>Dr. Smith</td>
+                                <td>2024-11-20 10:00 AM</td>
+                            </tr>
+                            <!-- Additional rows can be added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
